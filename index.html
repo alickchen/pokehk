@@ -13,7 +13,7 @@
 	<a href="#" class="search"><img src="images/navigationbar_white_search@2x.png"/></a>
 	<h2>口袋香港</h2>
 </header>
-<div class="swiper-container">
+<div class="swiper-bg swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
         <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
@@ -95,7 +95,7 @@
     <div class="hot-name"><span></span> 热门话题</div>
     <div class="more">更多<span>></span></div>
    </div>
-   <div class="hot-topic">
+   <div class="hot-topic swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
@@ -133,7 +133,7 @@
 <script src="JS/jquery-3.1.0.min.js"></script>
 <script src="JS/swiper.jquery.min.js"></script>	
 <script type="text/javascript">
- var swiper = new Swiper('.swiper-container', {
+ var swiper = new Swiper('.swiper-bg', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         loop: true,
