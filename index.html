@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>口袋香港</title>
+	<link rel="stylesheet"  type="text/css" href="style/swiper.min.css">
+	<link rel="stylesheet" type="text/css"  href="style/style.css">
+</head>
+<body>
+<header class='header'>
+	<a href="#" class="navigationbar"><img src="images/navigationbar_tool_icon@2x.png"/></a>
+	<a href="#" class="search"><img src="images/navigationbar_white_search@2x.png"/></a>
+	<h2>口袋香港</h2>
+</header>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
+        <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
+        <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
+        <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
+        <div class="swiper-slide"><a href="#"><img src='images/default_bg_icon@2x.png'></a></div>
+    </div>    
+     <div class="swiper-pagination"></div>
+</div>
+<div class="tab-links clearfix">
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_metro_search_icon_6@2x.png"/><br/>
+       	地铁搜
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_discount_icon_6@2x.png"/><br/>
+       	折扣
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_quotation_icon_6@2x.png"/><br/>
+       	报价
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_strategy_icon_6@2x.png"/><br/>
+       	攻略
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_shopping_icon_6@2x.png"/><br/>
+       	商场
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_tripjournal_icon_6@2x.png"/><br/>
+       	景点
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_food_icon_6@2x.png"/><br/>
+       	美食
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_exhibition_icon_6@2x.png"/><br/>
+       	报价
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_metro_search_icon_6@2x.png"/><br/>
+       	攻略
+       </a>
+	</div>
+	<div class="tab-item">
+       <a href="#">
+       	<img src="images/home_cross_border_car_icon_6@2x.png"/><br/>
+       	跨境车
+       </a>
+	</div>
+</div>
+<div class="cupon">
+	<a href="#">
+		<img src='images/default_bg_icon@2x.png'/>
+	</a>
+</div>
+<div class="hot">
+   <div class="hot-title clearfix">
+    <div class="hot-name"><span></span> 热门话题</div>
+    <div class="more">更多<span>></span></div>
+   </div>
+   <div class="hot-topic">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+        </div>
+    </div>
+</div>
+<div class="hot">
+   <div class="hot-title clearfix">
+    <div class="hot-name"><span></span> 热门推荐</div>
+   </div>
+</div>
+<div class="hot">
+   <div class="hot-title clearfix">
+    <div class="hot-name"><span></span> 最新折扣</div>
+    <div class="more">更多<span>></span></div>
+   </div>
+</div>
+<div class="hot">
+   <div class="hot-title clearfix">
+    <div class="hot-name"><span></span> 最新专题</div>
+    <div class="more">更多<span>></span></div>
+   </div>
+</div>
+<div class="hot">
+   <div class="hot-title clearfix">
+    <div class="hot-name"><span></span> 最新攻略</div>
+    <div class="more">更多<span>></span></div>
+   </div>
+</div>
+<div class="to-the-top"><img src="images/common_scroll_to_top_rocket_icon@2x.png"/></div>
+<script src="JS/jquery-3.1.0.min.js"></script>
+<script src="JS/swiper.jquery.min.js"></script>	
+<script type="text/javascript">
+ var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        autoplay: 2500,
+    });
+
+ var hotTopic = new Swiper('.hot-topic', {
+    slidesPerView: 3,
+    spaceBetween: 30
+});
+
+$(function(){
+  $('.to-the-top').click(function(){
+       $('html, body').animate({scrollTop:0});
+  })
+
+})
+
+</script>
+</body>
+</html>
