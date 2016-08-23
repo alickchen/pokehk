@@ -104,7 +104,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.swiper-container {
+.swiper-bg {
   margin-top: 50px;
 }
 .swiper-pagination-bullet-active {
@@ -146,6 +146,7 @@ body {
 .hot {
   background-color: #fff;
   width: 100%;
+  margin: 10px 0;
 }
 .hot .hot-title {
   width: 100%;
@@ -180,6 +181,19 @@ body {
   color: #fff;
   margin-right: 5px;
   margin-left: 2px;
+}
+.hot .hot-topic {
+  padding: 5px 0 20px;
+}
+.hot .hot-topic .detail img {
+  width: 100%;
+}
+.hot .hot-topic .detail .detail-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
 }
 .to-the-top {
   position: fixed;
