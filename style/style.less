@@ -130,8 +130,9 @@ body {
         }
     }
   }
-  .hot-topic {
+  .hot-topic,.rec-swiper{
     padding: 5px 0 20px;
+    text-align: left;
     .detail {
      img {
         width: 100%;
@@ -144,7 +145,45 @@ body {
         word-break: break-all;
         //兼容性会有问题；
      }
+     .price {
+        margin-top: 10px;
+        h3 {
+            color: @main-color;
+            font-size: 20px;
+            del {
+                font-size: 16px;
+                color: #aaa;
+                margin-left: 2px;
+            }
+        }
+     }
 
+    }
+  }
+  .recommend {
+     text-align: center;
+    .rec-item {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        .text {
+         position: absolute;
+         top: 40%;
+         left: 50%;
+         margin-left: -100px;
+         display: inline-block;
+         color: #fff;
+         h2 {
+            border-top: 1px solid #fff;
+            padding-top: 5px;
+         }
+        }
+    }
+    .icon-sj {
+        position: relative; 
+        top: -20px;
     }
   }
 
@@ -156,6 +195,7 @@ body {
     right: 20px;
     bottom: 30px;
     width: 50px;
+    z-index: 100;
    img {
    width: 100%;
    }

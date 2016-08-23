@@ -139,15 +139,87 @@
                    <div class="detail-text">香港哪好玩呢呢D起去嗨起来吧来吧来吧来吧</div>
                 </div>
             </div>
-            
-            
-         
         </div>
     </div>
 </div>
 <div class="hot">
    <div class="hot-title clearfix">
     <div class="hot-name"><span></span> 热门推荐</div>
+   </div>
+   <div class="recommend">
+    	<div class="rec-item">
+    			<div class="text">
+    				<h1>美妆直邮</h1>
+    				<h2>全球正品香港直邮</h2>	
+    			</div>
+    			<img src="images/default_bg_icon@2x.png"/>
+    	</div>
+    	<div class="rec-item">
+    			<div class="text">
+    				<h1>美妆直邮</h1>
+    				<h2>全球正品香港直邮</h2>	
+    			</div>
+    			<img src="images/default_bg_icon@2x.png"/>
+    	</div>
+    	<img class="icon-sj" src="images/home_market_product_display_cell_middle_icon@2x.png"/>
+        <div class="rec-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="detail">
+                   <img src="images/default_bg_icon@2x.png"/><br/>
+                   <div class="detail-text">
+                   香港迪士尼乐园一日/二日门票香港迪士尼乐园一日/二/二日门票/二日门</div>
+                   <div class="price">
+                   <h3>￥178.00 <del>￥188.00</del></h3>
+
+                   </div>
+                </div>
+            </div>
+             <div class="swiper-slide">
+                <div class="detail">
+                   <img src="images/default_bg_icon@2x.png"/><br/>
+                   <div class="detail-text">
+                   香港迪士尼乐园一日/二日门票香港迪士尼乐园一日/二/二日门票/二日门</div>
+                   <div class="price">
+                   <h3>￥178.00 <del>￥188.00</del></h3>
+
+                   </div>
+                </div>
+            </div>
+             <div class="swiper-slide">
+                <div class="detail">
+                   <img src="images/default_bg_icon@2x.png"/><br/>
+                   <div class="detail-text">
+                   香港迪士尼乐园一日/二日门票香港迪士尼乐园一日/二/二日门票/二日门</div>
+                   <div class="price">
+                   <h3>￥178.00 <del>￥188.00</del></h3>
+
+                   </div>
+                </div>
+            </div>
+             <div class="swiper-slide">
+                <div class="detail">
+                   <img src="images/default_bg_icon@2x.png"/><br/>
+                   <div class="detail-text">
+                   香港迪士尼乐园一日/二日门票香港迪士尼乐园一日/二/二日门票/二日门</div>
+                   <div class="price">
+                   <h3>￥178.00 <del>￥188.00</del></h3>
+
+                   </div>
+                </div>
+            </div>
+             <div class="swiper-slide">
+                <div class="detail">
+                   <img src="images/default_bg_icon@2x.png"/><br/>
+                   <div class="detail-text">
+                   香港迪士尼乐园一日/二日门票香港迪士尼乐园一日/二/二日门票/二日门</div>
+                   <div class="price">
+                   <h3>￥178.00 <del>￥188.00</del></h3>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>   
    </div>
 </div>
 <div class="hot">
@@ -172,6 +244,9 @@
 <script src="JS/jquery-3.1.0.min.js"></script>
 <script src="JS/swiper.jquery.min.js"></script>	
 <script type="text/javascript">
+
+$(function(){
+
  var swiper = new Swiper('.swiper-bg', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -180,11 +255,16 @@
     });
 
  var hotTopic = new Swiper('.hot-topic', {
-    slidesPerView: 3,
+    slidesPerView: 3.5,
+    spaceBetween: 10
+});
+ var recSwiper = new Swiper('.rec-swiper', {
+    slidesPerView: 1.5,
     spaceBetween: 10
 });
 
-$(function(){
+
+
   $('.to-the-top').click(function(){
        $('html, body').animate({scrollTop:0});
   })

@@ -182,24 +182,70 @@ body {
   margin-right: 5px;
   margin-left: 2px;
 }
-.hot .hot-topic {
+.hot .hot-topic,
+.hot .rec-swiper {
   padding: 5px 0 20px;
+  text-align: left;
 }
-.hot .hot-topic .detail img {
+.hot .hot-topic .detail img,
+.hot .rec-swiper .detail img {
   width: 100%;
 }
-.hot .hot-topic .detail .detail-text {
+.hot .hot-topic .detail .detail-text,
+.hot .rec-swiper .detail .detail-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-all;
 }
+.hot .hot-topic .detail .price,
+.hot .rec-swiper .detail .price {
+  margin-top: 10px;
+}
+.hot .hot-topic .detail .price h3,
+.hot .rec-swiper .detail .price h3 {
+  color: #FF7800;
+  font-size: 20px;
+}
+.hot .hot-topic .detail .price h3 del,
+.hot .rec-swiper .detail .price h3 del {
+  font-size: 16px;
+  color: #aaa;
+  margin-left: 2px;
+}
+.hot .recommend {
+  text-align: center;
+}
+.hot .recommend .rec-item {
+  position: relative;
+  width: 100%;
+}
+.hot .recommend .rec-item img {
+  width: 100%;
+}
+.hot .recommend .rec-item .text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -100px;
+  display: inline-block;
+  color: #fff;
+}
+.hot .recommend .rec-item .text h2 {
+  border-top: 1px solid #fff;
+  padding-top: 5px;
+}
+.hot .recommend .icon-sj {
+  position: relative;
+  top: -20px;
+}
 .to-the-top {
   position: fixed;
   right: 20px;
   bottom: 30px;
   width: 50px;
+  z-index: 100;
 }
 .to-the-top img {
   width: 100%;
