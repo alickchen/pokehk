@@ -245,7 +245,7 @@
 <script src="JS/swiper.jquery.min.js"></script>	
 <script type="text/javascript">
 
-$(function(){
+window.onload=function(){
 
  var swiper = new Swiper('.swiper-bg', {
         pagination: '.swiper-pagination',
@@ -262,14 +262,12 @@ $(function(){
     slidesPerView: 1.5,
     spaceBetween: 10
 });
-
-
-
+   
   $('.to-the-top').click(function(){
        $('html, body').animate({scrollTop:0});
   })
 
-})
+}
 
 </script>
 </body>
